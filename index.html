@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ramzan Mubarak</title>
+</head>
+<body>
+    
+    <section>
+        <img src="images/mosque.jpg" class="mosque" alt="Mosque image">
+        <header>
+            <a href="#" class="logo">Ramzan</a>
+            <div class="toggle"></div>
+            <ul class="navigation">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#blogs" class="active">Blog</a></li>
+                <li><a href="#about" class="active">About</a></li>
+                <li><a href="#contact" class="active">Contact</a></li>
+            </ul>
+        </header>
+
+        <div class="content">
+            <div class="textbox">
+
+                
+
+                <h2>
+                    EID-UL-FITHR MUBARAK
+                </h2>
+
+                
+                <p >
+                    May the blessings of Allah be with you and your family forever and always. Eid Mubarak!
+                </p>
+                <p>
+                    May Allah forgive all your sins and accept your sacrifice and put an ease to all your suffering! Eid Ul Adha Mubarak.
+
+    Eid is a day to cheer and to laugh with all your heart. It’s a day to be grateful to Allah for all of his heavenly blessings on us. Wishing you a happy Eid.
+
+    On this holy festive, wishing you a day filled with lots of laughter and happy moments. Eid Mubarak from my family to yours!
+                </p>
+                <p>
+                    Wave goodbye to another amazing year and be ready to welcome the crescent moon, beautiful new dresses, and of course all the delicious food. Eid Mubarak to my loving family! I love you all!
+                </p>
+                <a href="#">Read more</a>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="cal" id="glass">
+        
+        <div class="box">
+            <div class="container">
+                <img src="images/ramzan.jpg" alt="Festival of love" id="img">
+
+                <strong><i>Happy Eid Mubarak! Wishing everyone happy holidays, stay safe and pray to your Almighty.</i></strong>
+                <div class="by">
+                    <p>-Muslim's community</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="blog" id="blogs">
+        <h2>Blogs</h2>
+        <img src="images/blog1.jpg" alt="Ramzan fest image" id="imgblog">
+        <p>
+            The month of Ramadan is that in which was revealed the Quran; a guidance for mankind, and clear proofs of the guidance, and the criterion (of right and wrong). And whosoever of you is present, let him fast the month <span id="dots">....</span> <span id="more">and whosoever of you is sick or on a journey, a number of other days. Allah desires for you ease; He desires not hardship for you; and that you should complete the period, and that you should magnify Allah for having guided you, and that perhaps you may be thankful.[Quran 2:185]
+
+            Muslims hold that all scripture was revealed during Ramadan, the scrolls of Abraham, Torah, Psalms, Gospel, and Quran having been handed down on the first, sixth, twelfth, thirteenth (in some sources, eighteenth) and twenty-fourth Ramadans,[year needed] respectively. Muhammed is said to have received his first quranic revelation on Laylat al-Qadr, one of five odd-numbered nights that fall during the last ten days of Ramadan.
+
+            Although Muslims were first commanded to fast in the second year of Hijra , they believe that the practice of fasting is not in fact an innovation of monotheism but rather has always been necessary for believers to attain taqwa . They point to the fact that the pre-Islamic pagans of Mecca fasted on the tenth day of Muharram to expiate sin and avoid drought.Philip Jenkins argues that the observance of Ramadan fasting grew out of "the strict Lenten discipline of the Syrian Churches," a postulation corroborated by other scholars, including theologian Paul-Gordon Chandler, but disputed by some Muslim academics.</span> 
+        </p>
+        <button onclick="myFunction()" id="myBtn">Read more</button>
+    </div>
+
+    <div class="about" id="about">
+        <h2>About</h2>
+        <br>
+        <br>
+        <strong>Ramzan Kareem</strong>
+        <br>
+        
+        <p>Let's celebrate the festival together</p>
+        <p>We are providing the smooth functionality and team work for for to make website cleverful for all users</p>
+        <br>
+        <br>
+        <br>
+
+        <table>
+            <tr>
+                <td>
+                    <a href="https://www.instagram.com/ramzan_status786/"><img src="images/insta.jpg" alt="instagram icon " id="insta"></a>
+                </td>
+                <td>
+                    <a href=""><img src="images/facebook.png" alt="Facebook icon" id="facebook"></a>
+                </td>
+                <td>
+                                        
+                    <a href=""><img src="images/twitter.png" alt="Twitter icon" id="twitter"></a>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+    <div class="contact" id="contact">
+
+        <h2>Contact us</h2>
+        <br>
+        <br>
+        <br>
+        
+        <form >
+            <label for="name" id="name">Name</label>
+            <br>
+            <br>
+            <input type="text" placeholder="name">
+            <br>
+            <br>
+            <label for="mail">E-mail id</label>
+            <br>
+            <br>
+            <input type="email" placeholder="email">
+            <br>
+            <br>
+            <label for="phno">Phone number</label>
+            <br>
+            <br>
+            <input type="number" placeholder="phno">
+            <br>
+            <br>
+
+            <button type="submit" id="btn">
+                submit
+            </button>
+
+        </form>
+    </div>
+    <span id="sp"></span>
+
+    <script>
+        var menuToggle = document.querySelector('.toggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.onclick = function(){
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+
+        function myFunction() 
+        {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") 
+            {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more"; 
+                moreText.style.display = "none";
+            } 
+            else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less"; 
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+
+</body>
+</html>
