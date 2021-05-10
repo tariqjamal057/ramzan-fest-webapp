@@ -16,6 +16,7 @@ section {
     justify-content: flex-start;
     align-items: center;
     background-image: linear-gradient(to right , rgb(203,255,203) , rgb(114,250,114) , rgb(65, 253, 65) , rgb(16, 73, 16));
+    margin-bottom: 10px;
 }
 
 
@@ -284,18 +285,19 @@ header ul li a:hover
 {
     content: '';
     position: absolute;
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 35px;
     background: linear-gradient(#ffc107,#e91e63);
     border-radius: 50%;
     transform: translate(-250px , -120px);
+    margin-top: 35px;  
 }
 #glass::after
 {
     content: '';
     position: absolute;
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     background: linear-gradient(#2196f3,#31ff38);
     border-radius: 50%;
     transform: translate(250px , 150px);
@@ -339,18 +341,23 @@ header ul li a:hover
 .blog 
 {
     background-image: linear-gradient(to right , rgb(248, 207, 248) , rgb(255, 161, 255) , rgb(255, 100, 255) , rgb(233, 6, 233));    
+    margin-top: 60px;
 }
 .blog h2 
 {
     color: #0169b2;
     margin-bottom: 10px;
     margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #imgblog
 {
     width: fit-content;
     height: auto;
+    margin-left: 550px;
 }
 
 #myBtn 
@@ -361,9 +368,36 @@ header ul li a:hover
     font-size: 15px;
 }
 
-.about
+.aboutsec 
 {
     background: linear-gradient(to right , rgb(253, 94, 169),rgb(133, 108, 0));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.about
+{
+    
+    position: relative;
+    width: auto;
+    min-height: auto;
+    background: rgba(255,255,255,0.1);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px); 
+    border-radius: 10px;
+    margin: 40px;
+
+}
+.images
+{
+    display: flex;
+    justify-content: flex-end;
+    justify-content: flex-end;
 }
 
 #insta
@@ -389,14 +423,43 @@ header ul li a:hover
     font-size: 1.2rem;
 }
 
+.contactpage
+{
+    background: linear-gradient(to right , rgb(253, 197, 94),rgb(174, 236, 198));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
 .contact 
 {
     background: rgb(174, 240, 214);
+    margin-top: 40px;
+    position: relative;
+    width: 300px;
+    min-height: 350px;
+    background: rgba(245, 205, 205, 0.979);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgb(255, 255, 255);
+    border-right: 1px solid rgba(245, 107, 107, 0.521);
+    border-bottom: rgba(236, 173, 173, 0.2);
+    backdrop-filter: blur(10px); 
+    border-radius: 10px;
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #name
 {
     font-size: 1.3rem;
     
+}
+#con 
+{
+    font-size: 1.4rem;
 }
 .sp
 {
