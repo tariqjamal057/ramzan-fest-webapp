@@ -353,12 +353,7 @@ header ul li a:hover
     justify-content: center;
 }
 
-#imgblog
-{
-    width: fit-content;
-    height: auto;
-    margin-left: 550px;
-}
+
 
 #myBtn 
 {
@@ -452,6 +447,10 @@ header ul li a:hover
     align-items: center;
     justify-content: center;
 }
+.contact form input
+{
+    font-size: 17px;
+}
 #name
 {
     font-size: 1.3rem;
@@ -465,4 +464,10 @@ header ul li a:hover
 {
     background-image: linear-gradient(to right , rgb(248, 207, 248) , rgb(255, 161, 255) , rgb(255, 100, 255) , rgb(233, 6, 233));    
 
+}
+.cpy 
+{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    background-color: #d2e9fa;
 }
