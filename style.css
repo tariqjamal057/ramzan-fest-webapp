@@ -278,7 +278,8 @@ header ul li a:hover
     justify-content: center;
     min-height: 100vh;
     background-image: linear-gradient(to right , rgb(230, 199, 173) , rgb(196, 164, 122) , rgb(248, 163, 106) , rgb(223, 77, 9));
-    overflow: scroll;    
+    overflow: scroll;  
+    margin-top: 35px;  
 }
 
 #glass::before 
@@ -286,11 +287,10 @@ header ul li a:hover
     content: '';
     position: absolute;
     width: 350px;
-    height: 35px;
+    height: 350px;
     background: linear-gradient(#ffc107,#e91e63);
     border-radius: 50%;
     transform: translate(-250px , -120px);
-    margin-top: 35px;  
 }
 #glass::after
 {
@@ -470,4 +470,12 @@ header ul li a:hover
     margin-top: 15px;
     margin-bottom: 10px;
     background-color: #d2e9fa;
+}
+
+.copyright 
+{
+    
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 10%;
 }
