@@ -253,7 +253,8 @@ header ul li a:hover
     }
     .mosque
     {
-        max-width: auto;
+        width: 90%;
+        height: 40%;
     }
     .content .textbox h2 
     {
