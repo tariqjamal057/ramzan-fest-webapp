@@ -1,3 +1,7 @@
+html
+{
+    scroll-behavior: smooth;
+}
 
 *
 {
@@ -6,53 +10,41 @@
     box-sizing: border-box;
     
 }
-
-section {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    padding: 100px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+body{
     background-image: linear-gradient(to right , #8c4cd4 , #c0cc1f);
-    margin-bottom: 10px;
+    overflow-x: hidden;
 }
 
-
-header:hover
-{
-    background: black;
-    border-radius: 5px;
-    
-    
-}
-
+/*-------------- Designing of header section --------------*/
 header
 {
+    background-image: linear-gradient(to right , #8c4cd4 , #c0cc1f);
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 10px 10px #444;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    height: 10vh;
     padding: 40px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1000-0;
+    z-index: 1;
 }
 
 header .logo 
 {
     position: relative;
-    color: rgb(250, 49, 42);
+    color: #fa312a;
     display: inline-block;
     font-size: 2rem;
     text-decoration: solid;
     font-weight: 800;
     opacity: 0;
     text-shadow: 2px 2px 6px #fff;
-    animation: slide_left 500s linear forwards;
-    animation-delay: 0.7s;
+    animation: slide_left 3s linear forwards;
+    animation-delay: 1s;
     
 }
 
@@ -60,10 +52,10 @@ header .logo
 {
     0%
     {
-        transform: translateX(100px);
+        transform: translateX(-100px);
         opacity: 0;
     }
-    0%
+    100%
     {
         transform: translateX(0px);
         opacity: 1;
@@ -71,11 +63,7 @@ header .logo
 }
 
 
-header .logo:hover{
-    background: rgb(213, 241, 145);            
-    border-radius: 10px;    
 
-}
 
 header ul 
 {
@@ -86,6 +74,12 @@ header ul
 header ul li
 {
     list-style: none;
+    transition: 0.6s;
+}
+
+header ul li:hover
+{
+    transform: scale(1.3);
 }
 
 header ul li a
@@ -98,21 +92,81 @@ header ul li a
     display: inline-block;
     padding: 8px 18px;
     text-decoration: none;
-    user-select: none;
-    opacity: 0;
-    animation: slide_top 500s linear backwards;
-    animation-delay: 0.7s;
+    user-select: auto;
+
     
 }
 
-@keyframes slide_top
+header ul li:nth-child(1)
+{
+    animation: slide_top1 2s linear backwards;
+    animation-delay: 3s;
+}
+header ul li:nth-child(2)
+{
+    animation: slide_top2 2s linear backwards;
+    animation-delay: 4s;
+}
+header ul li:nth-child(3)
+{
+    animation: slide_top3 2s linear backwards;
+    animation-delay: 5s;
+}
+header ul li:nth-child(4)
+{
+    animation: slide_top4 2s linear backwards;
+    animation-delay: 6s;
+}
+
+
+
+@keyframes slide_top1
 {
     0%
     {
-        transform: translateX(100px);
+        transform: translateX(-100px);
         opacity: 0;
     }
+    100%
+    {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slide_top2
+{
     0%
+    {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slide_top3
+{
+    0%
+    {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slide_top4
+{
+    0%
+    {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%
     {
         transform: translateX(0px);
         opacity: 1;
@@ -128,16 +182,31 @@ header ul li a:hover
     transform: translateY(-5px);
 }
 
+/*------------------- Home section designing -------------------*/
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: linear-gradient(to right , #8c4cd4 , #c0cc1f);
+    margin-bottom: 10px;
+}
 .content
 {
     position: relative;
     display: flex;
+    width: 100%;
+    height: 100%;
 }
 
 .content .textbox 
 {
     position: relative;
-    max-width: 550px;
+    max-width: 50vw;
 }
 
 .content .textbox h2
@@ -145,13 +214,29 @@ header ul li a:hover
     color: #0169b2;
     font-size: 3.1rem;
     margin-top: 80px;
-    line-height: 1.2em;
+    margin-bottom: 20px;
     font-weight: 700;
     text-shadow: 2px 2px 12px rgb(140, 238, 245);
+    animation: section1 2s linear backwards;
+    animation-delay: 7.5s;
+}
+
+@keyframes section1
+{
+    0%
+    {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateX(0px);
+        opacity: 1;
+    }
 }
 .content .textbox h2:hover
 {
-    transform: translateY(-20px);
+    color: #fff;
        
 }
 
@@ -159,7 +244,9 @@ header ul li a:hover
 {
     font-size: 1.2rem;
     color: rgb(36, 2, 23);
-    
+    animation: sectiontext 2s ease-in-out backwards;
+    animation-delay: 8.5s;
+    line-height: 35px;
 }
 
 .content .textbox a
@@ -174,6 +261,36 @@ header ul li a:hover
     font-family: 700;
     letter-spacing: 1px;
     text-decoration: none;
+    animation: sectiontext 2s ease-in-out backwards;
+    animation-delay: 8.5s;
+}
+@keyframes sectiontext
+{
+    0%
+    {
+        transform: translateY(-500px);
+        opacity: 0;
+    }
+    25%
+    {
+        transform: translateX(0px);
+        opacity: 0.3;
+    }
+    50%
+    {
+        transform: translateX(0px);
+        opacity: 0.5;
+    }
+    75%
+    {
+        transform: translateX(0px);
+        opacity: 0.8;
+    }
+    100%
+    {
+        transform: translateX(0px);
+        opacity: 1;
+    }
 }
 
 .mosque
@@ -184,17 +301,16 @@ header ul li a:hover
     width: 35%;
     height: 55%;
     margin-top: 10px;
+    animation: section1 2s linear backwards;
+    animation-delay: 7.5s;
 }
 
 
-
+/*------------------- Making its responsive -------------------*/
 
 @media (max-width: 991px)
 {
-    selection{
-        padding: 150px 20px;
 
-    }
     header 
     {
         padding: 20px;
@@ -208,11 +324,11 @@ header ul li a:hover
     .navigation.active
     {
         position: fixed;
-        top: 0;
+        top: 10vh;
         left: 0;
         width: 100%;
         height: 100%;
-        background: #fff;
+        background: rgba(0, 0, 0 ,0.9);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -243,6 +359,8 @@ header ul li a:hover
         cursor: pointer;
         z-index: 1000;
         border-radius: 3px;
+        margin-bottom: 18px;
+        transition: 0.7s;
     }
     .toggle.active
     {
@@ -250,26 +368,36 @@ header ul li a:hover
         background-size: 25px;
         background-repeat: no-repeat;
         background-position: center;
+        transition: 0.7s;
     }
     .mosque
     {
-        width: 90%;
-        height: 40%;
+        opacity: 0;
+    }
+    section {
+        padding: 100px 20px;
+    }
+    .content .textbox 
+    {
+        position: relative;
+        max-width: 100vw;
     }
     .content .textbox h2 
     {
         font-size: 2.5rem;
     }
-
-}
-
-@media (max-width: 600px)
-{
-    .mosque
-    {
-        opacity: 0.4;
+    .container  {
+        width: 80vw;
+        min-height: 55vh;
     }
+    #img{
+        width: 80vw;
+        min-height: 40vh;
+    }
+
 }
+
+/* ------------- Home sub-part section -----------------*/
 
 #glass
 {
@@ -279,7 +407,7 @@ header ul li a:hover
     justify-content: center;
     min-height: 100vh;
     background-image: linear-gradient(to right , #8c4cd4 , #c0cc1f);
-    overflow: scroll;  
+    overflow: hidden;  
     margin-top: 35px;  
 }
 
@@ -287,8 +415,8 @@ header ul li a:hover
 {
     content: '';
     position: absolute;
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     background: linear-gradient(#ffc107,#e91e63);
     border-radius: 50%;
     transform: translate(-250px , -120px);
@@ -297,23 +425,22 @@ header ul li a:hover
 {
     content: '';
     position: absolute;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     background: linear-gradient(#2196f3,#31ff38);
     border-radius: 50%;
-    transform: translate(250px , 150px);
+    transform: translate(270px , 290px);
 }
 
 .box 
 {
-    position: relative;
-    z-index: 1000;
+    position: relative; 
 }
 .container 
 {
     position: relative;
-    width: 400px;
-    min-height: 400px;
+    width: 40vw;
+    min-height: 55vh;
     background: rgba(255,255,255,0.1);
     box-shadow: 0 25px 45px rgba(0,0,0,0.1);
     border: 1px solid rgba(255,255,255,0.5);
@@ -328,7 +455,10 @@ header ul li a:hover
     display:flex;
     justify-content: center;
     align-items: center;
-    width: 400px;
+    width:40vw;
+    height: 40vh;
+    margin-bottom: 33px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .by 
@@ -338,7 +468,12 @@ header ul li a:hover
     justify-content: flex-end;
 }
 
+.by  p {
+    padding: 15px 0px 15px 0px;
+}
 
+
+/*---------------- Designing in blog section ----------------*/
 .blog 
 {
     background-image: linear-gradient(to right , #8c4cd4 , #c0cc1f);
@@ -354,16 +489,22 @@ header ul li a:hover
     justify-content: center;
 }
 
+.blog p {
+    margin: 0px 20px;
+    line-height: 30px;
+}
 
 
 #myBtn 
 {
+    margin: 0px 20px;
     color: #fff;
     background: black;
     border-radius: 5px;
     font-size: 15px;
 }
 
+/*---------- Designing of about section ----------*/
 .aboutsec 
 {
     background-image: linear-gradient(to right , #8c4cd4 , #c0cc1f);
@@ -389,35 +530,40 @@ header ul li a:hover
     margin: 40px;
 
 }
-.images
+
+.about h2 , .about strong , .about p 
 {
+    text-align: center;
+    padding: 0px 20px;
+    line-height: 25px;
+}
+
+.social-icons{
     display: flex;
-    justify-content: flex-end;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
-#insta
+#insta , #twitter , #facebook
 {
+    margin: 0 20px;
+    color: #000;
+    font-size: 35px;
     width: 40px;
     height: 40px;
 }
 
-#facebook
-{
-    width: 40px;
-    height: 40px;
-}
-
-#twitter
-{
-    width: 40px;
-    height: 40px;
+#insta:hover , #twitter:hover , #facebook:hover {
+    color: #0169b2;
 }
 
 .about h2 
 {
     font-size: 1.2rem;
 }
+
+/*------------ Designing of contact page ------------*/
 
 .contactpage
 {
@@ -446,6 +592,7 @@ header ul li a:hover
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 10px 10px 0px 0px;
 }
 .contact form input
 {
@@ -475,16 +622,13 @@ header ul li a:hover
 {
     font-size: 1.4rem;
 }
-.sp
-{
-    background-image: linear-gradient(to right , rgb(248, 207, 248) , rgb(255, 161, 255) , rgb(255, 100, 255) , rgb(233, 6, 233));    
 
-}
 .cpy 
 {
     margin-top: 15px;
     margin-bottom: 10px;
-    background-color: lightgrey;
+    background-image: linear-gradient(to right , #8c4cd4 , #c0cc1f);
+    border-top: 2px solid #000; 
 }
 
 .copyright 
@@ -494,3 +638,9 @@ header ul li a:hover
     padding-bottom: 3%;
     padding-left: 10%;
 }
+
+.copyright p a  {
+    color: #000;
+    text-decoration: none;
+}
+

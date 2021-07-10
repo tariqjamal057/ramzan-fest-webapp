@@ -5,22 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Ramzan Mubarak</title>
 </head>
 <body>
-    
+
+
+    <!-- Header start -->
+    <header>
+        <a href="#" class="logo">Ramzan</a>
+        <div class="toggle"></div>
+        <ul class="navigation">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#blogs" class="active">Blog</a></li>
+            <li><a href="#about" class="active">About</a></li>
+            <li><a href="#contact" class="active">Contact</a></li>
+        </ul>
+    </header>
+    <!-- Header end -->
+
+    <!-- Home section start -->
     <section>
         <img src="images/eid1.jpg" class="mosque" alt="Mosque image">
-        <header>
-            <a href="#" class="logo">Ramzan</a>
-            <div class="toggle"></div>
-            <ul class="navigation">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#blogs" class="active">Blog</a></li>
-                <li><a href="#about" class="active">About</a></li>
-                <li><a href="#contact" class="active">Contact</a></li>
-            </ul>
-        </header>
+        
 
         <div class="content">
             <div class="textbox">
@@ -34,15 +41,14 @@
                 
                 <p >
                     May the blessings of Allah be with you and your family forever and always. Eid Mubarak!
-                </p>
-                <p>
+                
+                
                     May Allah forgive all your sins and accept your sacrifice and put an ease to all your suffering! Eid Ul Adha Mubarak.
 
     Eid is a day to cheer and to laugh with all your heart. It’s a day to be grateful to Allah for all of his heavenly blessings on us. Wishing you a happy Eid.
 
     On this holy festive, wishing you a day filled with lots of laughter and happy moments. Eid Mubarak from my family to yours!
-                </p>
-                <p>
+                
                     Wave goodbye to another amazing year and be ready to welcome the crescent moon, beautiful new dresses, and of course all the delicious food. Eid Mubarak to my loving family! I love you all!
                 </p>
                 <a href="#">Read more</a>
@@ -50,7 +56,9 @@
         </div>
 
     </section>
+    <!-- Home section end -->
 
+    <!-- Home section sub-part start-->
     <div class="cal" id="glass">
         
         <div class="box">
@@ -65,7 +73,10 @@
         </div>
         
     </div>
-    
+    <!-- Home section sub-part end-->
+
+
+    <!-- Blogs section start -->
     <div class="blog" id="blogs">
         <h2>Blogs</h2>
         <br>
@@ -80,39 +91,35 @@
         </p>
         <button onclick="myFunction()" id="myBtn">Read more</button>
     </div>
+    <!-- Blogs section end -->
 
+    <!-- About section start -->
     <div class="aboutsec">
         <div class="about" id="about">
             <h2>About</h2>
             <br>
             <br>
-            <strong>Ramzan Kareem</strong>
+            <p><strong>Ramzan Kareem</strong></p>
             <br>
             
-            <p>Let's celebrate the festival together</p>
-            <p>We are providing the smooth functionality and team work for for to make website cleverful for all users</p>
+            <p>Let's celebrate the festival together
+            We are providing the smooth functionality and team work for for to make website cleverful for all users.Let's celebrate the festival together
+            We are providing the smooth functionality and team work for for to make website cleverful for all users</p>
             <br>
             <br>
             <br>
     
-            <table>
-                <tr>
-                    <td>
-                        <a href="https://www.instagram.com/ramzan_status786/"><img src="images/insta.jpg" alt="instagram icon " id="insta" class="images"></a>
-                    </td>
-                    <td>
-                        <a href="https://www.facebook.com/groups/Haramain.info/?ref=share"><img src="images/facebook.png" alt="Facebook icon" id="facebook" class="images"></a>
-                    </td>
-                    <td>
-                                            
-                        <a href="https://twitter.com/hashtag/ramzan?s=08"><img src="images/twitter.png" alt="Twitter icon" id="twitter" class="images"></a>
-                    </td>
-                </tr>
-            </table>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/ramzan_status786/"><i class="fa fa-instagram" id="insta"></i></a>
+                <a href="https://www.facebook.com/groups/Haramain.info/?ref=share"><i class="fa fa-facebook" id="facebook"></i></a>
+                <a href="https://twitter.com/hashtag/ramzan?s=08"><i class="fa fa-twitter " id="twitter"></i></a>
+            </div>
     
         </div>
     </div>
+    <!-- About section end -->
 
+    <!-- contact section start -->
     <div class="contactpage">
         <div class="contact" id="contact">
 
@@ -150,12 +157,14 @@
             </form>
         </div>
     </div>
-    <span id="sp"></span>
+    <!-- contact section end -->
+
+    <!-- fotter start -->
     <div class="cpy">
         <div class="copyright">
             <p >
     
-                About us    <br>     Contact us 
+                <a href="#about">About us</a>    <br>     <a href="#contact">Contact Us</a> 
     
             </p>
     
@@ -168,6 +177,12 @@
             </p> 
         </div>   
     </div>
+    <!-- fotter end -->
+
+
+
+
+
 
     <script>
         var menuToggle = document.querySelector('.toggle');
