@@ -387,11 +387,11 @@ section {
         font-size: 2.5rem;
     }
     .container  {
-        width: 80vw;
+        width: 80%;
         min-height: 55vh;
     }
     #img{
-        width: 80vw;
+        width: 80%;
         min-height: 40vh;
     }
 
