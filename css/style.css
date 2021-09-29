@@ -1,0 +1,579 @@
+/* Styling for our webpage  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    background: #ff8800;
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: #000;
+    border-radius: 20px;
+    height: 50vh;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#fixed {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+}
+/* Home section styling starts  */
+
+/* Header section stylying starts  */
+#home header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 10vh;
+    background: rgba(255, 234, 210,.8);
+    z-index: 1;
+}
+#home header nav {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#home header nav .logo {
+    cursor: pointer;
+    font-family: 'Lobster Two', cursive;
+    letter-spacing: 1.3px;
+    font-size: 30px;
+    color: #ff8800;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 10px;
+    background: #000;
+}
+#home header nav .navLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 55%;
+}
+#home header nav .navLinks li {
+    list-style: none;
+    cursor: pointer;
+}
+#home header nav .navLinks li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: .5s;
+}
+#home header nav .navLinks li a#signin {
+    padding: 8px 12px;
+    border-radius: 4px;
+    background: #fff;
+}
+#home header nav .navLinks li:hover ,
+#home header nav .navLinks li a:hover  {
+    color: #ff8800;
+}
+#home header nav .hamburger 
+{
+    display: none;
+}
+#home header nav .hamburger div{
+    width: 30px;
+    height: 3px;
+    margin: 3px;
+    background: #000;
+    cursor: pointer;
+}
+/* Header section stylying ends   */
+
+#home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../Images/mosque.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    user-select: none;
+}
+#home i {
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0px 0px 3px #fff,
+                0px 0px 6px #fff,
+                0px 0px 9px #fff,
+                0px 0px 12px #fff,
+                0px 0px 15px #fff,
+                0px 0px 18px #fff,
+                0px 0px 21px #fff,
+                0px 0px 24px #fff,
+                0px 0px 27px #fff,
+                0px 0px 30px #fff,
+                0px 0px 33px #fff,
+                0px 0px 36px #fff,
+                0px 0px 39px #fff;
+    animation: blink linear infinite;   
+}
+@keyframes blink {
+    100% , 0% {
+        opacity: 0;
+    }
+    10% , 90%{
+        opacity: 1;
+    }
+}
+#home .text {
+    margin: 0px 30px;
+    width: 50%;
+    background: rgba(0,0,0,.2);
+    padding: 20px;
+    box-shadow: inset 3px 3px 3px #fff , inset -3px -3px 3px #000;
+}
+#home .text h2 {
+    font-family: 'Lobster Two', cursive;
+    font-size: 25px;
+    font-weight: 600;
+    color: #ff8800;
+    padding-bottom: 20px;
+}
+#home .text p {
+    color: #fff;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+#home .text a {
+    color: #fff;
+    background: #000;
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+#home .text a:hover {
+    color: #ff8800;
+}
+#home .ramzan {
+    padding: 3%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#home .ramzan img {
+    width: 300px;
+    height: 300px;
+    opacity: .8;
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+/* Home section styling ends  */
+
+/* About section styling starts  */
+#about {
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px 0px;
+    background: #fad6ae;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#about .name {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#about .name .circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ff8800;
+    border: 4px solid #fff;
+}
+#about .name .circle h1 {
+    font-size: 40px;
+    color: #fad6ae;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    white-space: wrap;
+    text-shadow:1px 1px 1px #fff,
+                2px 2px 1px #fff,
+                3px 3px 1px #fff,
+                4px 4px 1px #fff,
+                5px 5px 1px rgba(0,0,0,.2);
+}
+#about .aboutContents {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+#about .aboutContents h1 {
+    font-family: 'Lobster Two', cursive;
+    font-size: 30px;
+    font-weight: 700;
+    color: #ff8800;
+    padding-bottom: 20px;
+}
+#about .aboutContents p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+#about .aboutContents a {
+    font-size: 18px;
+    color: #fff;
+    background: #ff8800;
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all .7s ease;
+}
+#about .aboutContents a:hover {
+    color: #ff8800;
+    background: #000;
+} 
+/* About section styling ends  */
+
+/* About section styling starts  */
+#products {
+    min-height: 100vh;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#products h2 {
+    width: 100%;
+    letter-spacing: 1px;
+    background: #000;
+    color: #ff8800;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 20px 0px;
+    text-align: center;
+}
+#products .mainBox {
+    min-height: 100%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#products .mainBox .frame {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    border: .1px solid #000;
+    margin: 20px;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+
+#products .mainBox .frame:hover {
+    box-shadow: 5px 5px 5px rgba(0,0,0,.6) , -5px -5px 5px rgba(136, 136, 136, 0.8);
+}
+#products .mainBox .frame .product {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: .5s;
+}
+#products .mainBox .frame:hover .product {
+    transform: scale(1.3);
+}
+#products .mainBox .frame .icons {
+    position: absolute;
+    top: 0;
+    right: -70px;
+    height: 140px;
+    width: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    transition: .5s;
+    transition-delay: .8s;
+}
+#products .mainBox .frame:hover .icons {
+    right: 0;
+}
+#products .mainBox .frame .icons p {
+    cursor: pointer;
+    background: rgba(0, 0, 0 ,.2);
+    padding: 6px 14px;
+    margin: 5px;
+    transition: .5s;
+}
+#products .mainBox .frame .icons p:hover {
+    color: #ff8800;
+}
+#products .mainBox .frame .text {
+    position: absolute;
+    bottom: -100px;
+    width: 100%;
+    height: 15%;
+    background: rgba(0,0,0,.4);
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    transition: .5s;
+    transition-delay: 1.2s;
+}
+#products .mainBox .frame:hover .text {
+    bottom: 0;
+}
+#products .mainBox .frame .text h3{
+    color: #ff8800;
+    font-size: 25px;
+}
+#products .mainBox .frame .text p {
+    font-size: 18px;
+    color: #fff;
+}
+#products .mainBox .frame .text p .icon {
+    margin-right: 10px;
+}
+/* About section styling ends  */
+
+/* contactus section styling starts  */
+#contact {
+    width: 100%;
+    min-height: 100%;
+    padding: 30px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact .form {
+    width: 60%;
+    min-height: 100%;
+}
+#contact .form form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(0,0,0,.4);
+    box-shadow: 5px 5px 5px #000 , -5px -5px 5px #000;
+}
+#contact .form form h2 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+#contact .form form #formItems {
+    position: relative;
+    width: 100%;
+    margin: 15px 0px;
+    font-size: 17px;
+    color: #fff;
+    height: 40px;
+    background: none;
+    padding: 3px 8px;
+    border-bottom: 1px solid #000;
+    transition: 1s;
+}
+#contact .form form #textarea {
+    width: 100%;
+    margin: 15px 0px;
+    font-size: 17px;
+    color: #fff;
+    height: 100px;
+    background: none;
+    padding: 3px 8px;
+    border-bottom: 2px solid #000;
+    transition: 1s;
+}
+#contact .form form #submit {
+    margin: 15px 0px;
+    width: 100%;
+    text-transform: uppercase;
+    padding: 10px 40px;
+    text-align: center;
+    background: transparent;
+    border-radius: 5px;
+    border: 2px solid #000;
+    background: #ff8800;
+    font-size: 20px;
+    transition: 1s;
+    transform-origin: left;
+    color: #fff;
+}
+#contact .form form #submit:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+}
+/* contactus section styling ends   */
+
+/* fotter section styling starts  */
+footer {
+    width: 100%;
+    min-height: 100%;
+    background: #fad6ae;
+}
+footer .fotterSec {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    justify-content: space-evenly;
+    padding: 20px 0px;
+}
+footer .fotterSec .menu h2{
+    color: #ff8800;
+    text-transform: uppercase;
+}
+footer .fotterSec .menu li{
+    list-style: none;
+}
+footer .fotterSec .menu li a{
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 17px;
+    transition: .5s;
+}
+footer .fotterSec .menu li a:hover {
+    color: #ff8800;
+}
+footer .fotterSec .newsLetter form input {
+    font-size: 17px;
+    padding: 4px;
+    background: rgba(0,0,0,.2);
+    border: 1px solid #000;
+}
+footer .fotterSec .newsLetter form button {
+    font-size: 17px;
+    padding: 6px 64.2px;
+    background: #fff;
+    border: 1px solid #000;
+}
+footer .cpy {
+    font-size: 18px;
+    padding: 15px 0px;
+    background: #000;
+    color: #ff8800;
+    text-align: center;
+}
+/* fotter section styling ends  */
+
+/* Making the page Responsive */
+@media screen and (max-width:1150px){
+    #home header nav .navLinks {
+        width: 65%;
+    }
+}
+@media screen and (max-width:850px){
+    #home header nav .navLinks {
+        position: fixed;
+        left: 0;
+        padding-left: 6%;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        width: 100vw;
+        height: 50vh;
+        transform: translate(100%);
+        background: #ff8800;
+        top: 10vh;
+        clip-path: polygon(98% 0, 100% 0, 100% 100%, 99% 100%);
+        transition: 1.5s;
+    }
+    #home header nav .hamburger {
+        display: block;
+    }
+    #home {
+        flex-direction: column-reverse;
+    }
+    #home .text { 
+        width: 95%;
+        position: absolute;
+        bottom: 5vh;
+    }
+    #home .ramzan { 
+        display: none;
+    }
+    #about {
+        flex-direction: column;
+    }
+    #about .name {
+        width: 100%;
+    }
+    #about .name .circle {
+        width: 200px;
+        height: 200px;
+    }
+    #about .name .circle h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    #about .aboutContents {
+        width: 90%;
+    }
+    #contact .form {
+        width: 90%;
+    }
+    footer .fotterSec {
+        grid-template-columns: unset;
+        padding-left: 20px;
+    }
+    footer .fotterSec .menu {
+        margin: 20px 0px;
+    }
+    footer .fotterSec .newsLetter {
+        margin: 20px 0px;
+    }
+}
+
+/* Responsivness  */
+#home header nav .navLinks.active {
+    transform: translate(0%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.toggle1 {
+    transform: rotate(45deg) translate(19% , 98%);
+    transition: 1s;
+}
+.toggle2 {
+    opacity: 0;
+    transition: 1s;
+}
+.toggle3 {
+    transform: rotate(-45deg) translate(14% , -110%);
+    transition: 1s;
+}
