@@ -192,9 +192,9 @@ body {
 
 /* About section styling starts  */
 #about {
-    min-height: 100vh;
+    height: 100%;
     width: 100%;
-    padding: 20px 0px;
+    padding: 100px 0px;
     background: #fad6ae;
     display: flex;
     justify-content: space-around;
@@ -507,9 +507,10 @@ footer .cpy {
         align-items: flex-start;
         justify-content: space-evenly;
         width: 100vw;
-        height: 50vh;
+        height: 90vh;
         transform: translate(100%);
-        background: #ff8800;
+        background: rgba(255, 234, 210,.8);
+        border: 2px solid #000;
         top: 10vh;
         clip-path: polygon(98% 0, 100% 0, 100% 100%, 99% 100%);
         transition: 1.5s;
@@ -537,6 +538,7 @@ footer .cpy {
     #about .name .circle {
         width: 200px;
         height: 200px;
+        margin-bottom: 50px;
     }
     #about .name .circle h1 {
         font-size: 30px;
